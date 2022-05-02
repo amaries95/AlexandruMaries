@@ -1,18 +1,14 @@
+import Footer from './Footer/Footer';
 import style from './HeaderMenu.module.css';
-import Option from './Option/Option';
-import img from './photo.JPG';
+import Options from './Options/Options';
+import Person from './Person/Person';
+
 
 export default function HeaderMenu(props)
 {
-    const HeaderOptions = ["HOME", "EXPERIENCE", "EDUCATION", "PROJECTS", "SKILLS", "RECOMMENDATION"]
-
     return <div className={style.header}>
-        <img src={img}></img>
-        <ul>
-            {HeaderOptions.map(option => 
-                {
-                    return <Option text={option}></Option>;
-                })}
-        </ul>
+        <Person />
+        <Options />
+        <Footer />
     </div>;
 }

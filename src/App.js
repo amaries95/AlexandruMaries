@@ -1,20 +1,19 @@
+import 'bootstrap/dist/css/bootstrap.css';
+import { Col, Row } from 'react-bootstrap';
 import './App.css';
 import HeaderMenu from './components/HeaderMenu/HeaderMenu';
 
 function App() {
   return (
-    <div>
-      <div style={{width:'25%', float: 'left'}}>
+    <Row className="vh-100 gx-0">
+      <Col xs={3} className="col-divider">
         <HeaderMenu />
-      </div>
-      <div style={{width:'0.15%', height: '100vh', backgroundColor: 'darkcyan', float: 'left'}}>
-        <p> </p>
-      </div>
-      <div style={{width:'74.85%', float: 'left'}}>
-        
-      </div>
-    </div>
-      );
+      </Col>
+      <Col>
+        <p>dsa</p>
+      </Col>
+    </Row>
+  );
 }
 
 export default App;
