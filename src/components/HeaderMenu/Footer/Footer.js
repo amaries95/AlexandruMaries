@@ -9,7 +9,7 @@ export default function Footer(props) {
           <Row className={style.content}>
             <ul className={style.list}>
               <li>
-                <a href='/linkedin'>
+                <a href='https://www.linkedin.com/in/alexandrumaries' target='_blank' rel="noreferrer">
                   <LogoLinkedin 
                     color={"white"}
                     width={'25%'}
@@ -18,7 +18,7 @@ export default function Footer(props) {
                 </a>
               </li>
               <li>
-                <a href='/github'>
+                <a href='https://github.com/amaries95' target='_blank' rel="noreferrer">
                   <LogoGithub
                     color={"white"}
                     width={'25%'}
@@ -27,7 +27,7 @@ export default function Footer(props) {
                 </a>
               </li>
               <li>
-                <a href='/facebook'>
+                <a href='https://www.facebook.com/alexandru.maries28' target='_blank' rel="noreferrer">
                   <LogoFacebook
                     color={"white"}
                     width={'25%'}
