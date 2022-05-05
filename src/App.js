@@ -22,17 +22,17 @@ function App() {
         </Col>
         <Col>
             <Routes>
-              <Route path='/' element={<Home />}>
+              <Route path='/AlexandruMaries/' element={<Home />}>
               </Route>
-              <Route path='/experience' element={<Experience/>}>
+              <Route path='/AlexandruMaries/experience' element={<Experience/>}>
               </Route>
-              <Route path='/education' element={<Education></Education>}>
+              <Route path='/AlexandruMaries/education' element={<Education></Education>}>
               </Route>
-              <Route path='/projects' element={<Projects></Projects>}>
+              <Route path='/AlexandruMaries/projects' element={<Projects></Projects>}>
               </Route>
-              <Route path='/skills' element={<Skills></Skills>}>
+              <Route path='/AlexandruMaries/skills' element={<Skills></Skills>}>
               </Route>
-              <Route path='/recommendation' element={<Recommendation></Recommendation>}>
+              <Route path='/AlexandruMaries/recommendation' element={<Recommendation></Recommendation>}>
               </Route>
             </Routes>
         </Col>
