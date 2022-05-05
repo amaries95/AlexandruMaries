@@ -1,18 +1,44 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import { Col, Row } from 'react-bootstrap';
+import {
+  BrowserRouter as Router, Route, Routes
+} from "react-router-dom";
 import './App.css';
+import Education from './components/Education/Education';
+import Experience from './components/Experience/Experience';
 import HeaderMenu from './components/HeaderMenu/HeaderMenu';
+import Home from './components/Home/Home';
+import Projects from './components/Projects/Projects';
+import Recommendation from './components/Recommendation/Recommendation';
+import Skills from './components/Skills/Skills';
+
 
 function App() {
   return (
-    <Row className="vh-100 gx-0">
-      <Col xs={3} className="col-divider">
-        <HeaderMenu />
-      </Col>
-      <Col>
-        <p>dsa</p>
-      </Col>
-    </Row>
+    <Router>
+      <Row className="vh-100 gx-0">
+        <Col xs={3} className="col-divider">
+          <HeaderMenu />
+        </Col>
+        <Col>
+            <Routes>
+              <Route path='/' element={<Home />}>
+              </Route>
+              <Route path='/experience' element={<Experience/>}>
+              </Route>
+              <Route path='/education' element={<Education></Education>}>
+              </Route>
+              <Route path='/projects' element={<Projects></Projects>}>
+              </Route>
+              <Route path='/skills' element={<Skills></Skills>}>
+              </Route>
+              <Route path='/recommendation' element={<Recommendation></Recommendation>}>
+              </Route>
+            </Routes>
+        </Col>
+      </Row>
+    </Router>
+
   );
 }
 

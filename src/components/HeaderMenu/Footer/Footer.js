@@ -1,24 +1,42 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import { Card } from 'react-bootstrap';
+import { Card, Row } from 'react-bootstrap';
+import { LogoFacebook, LogoGithub, LogoLinkedin } from "react-ionicons";
+import style from './Footer.module.css';
 
 export default function Footer(props) {
   return (
-    // <div className={style['bottom-info']}>
-    //   <footer style={{ backgroundColor: 'darkcyan', width: '100%' }}>
-    //     <Col>
-    //       <p>dsa </p>
-    //     </Col>
-    //     <Col>
-    //       <p>dsa </p>
-    //     </Col>
-    //     <Col>
-    //       <p>dsa </p>
-    //     </Col>
-    //   </footer>
-    // </div>
-    <Card style={{ width: '100%', height: '100%' }}>
-      <p>some text</p>
-      <p>some text</p>
+    <Card className={style['bottom-info']}>
+          <Row className={style.content}>
+            <ul className={style.list}>
+              <li>
+                <a href='/linkedin'>
+                  <LogoLinkedin 
+                    color={"white"}
+                    width={'25%'}
+                    height={'25%'}>
+                  </LogoLinkedin>
+                </a>
+              </li>
+              <li>
+                <a href='/github'>
+                  <LogoGithub
+                    color={"white"}
+                    width={'25%'}
+                    height={'25%'}>
+                  </LogoGithub>
+                </a>
+              </li>
+              <li>
+                <a href='/facebook'>
+                  <LogoFacebook
+                    color={"white"}
+                    width={'25%'}
+                    height={'25%'}>
+                  </LogoFacebook>
+                </a>
+              </li>
+            </ul>
+          </Row>
     </Card>
   );
 }
