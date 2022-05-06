@@ -19,6 +19,19 @@
     display: inline;
 }
 
-.list-item:last-child {
+.social-links li:last-child {
     margin-right: 0;
+}
+
+@media only screen and (max-width: 1300px) {
+    .social-links li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 70px;
+    }
+
+    .social-links li:last-child {
+        margin-bottom: 0;
+    }
+    
 }
