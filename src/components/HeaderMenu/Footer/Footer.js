@@ -6,32 +6,32 @@ import style from './Footer.module.css';
 export default function Footer(props) {
   return (
     <Card className={style['bottom-info']}>
-          <Row className={style.content}>
-            <ul className={style.list}>
+          <Row className={style['social-links']}>
+            <ul>
               <li>
                 <a href='https://www.linkedin.com/in/alexandrumaries' target='_blank' rel="noreferrer">
                   <LogoLinkedin 
                     color={"white"}
-                    width={'25%'}
-                    height={'25%'}>
+                    width={'40px'}
+                    height={'40px'}>
                   </LogoLinkedin>
                 </a>
               </li>
-              <li>
+              <li className={style['list-item']}>
                 <a href='https://github.com/amaries95' target='_blank' rel="noreferrer">
                   <LogoGithub
                     color={"white"}
-                    width={'25%'}
-                    height={'25%'}>
+                    width={'40px'}
+                    height={'40px'}>
                   </LogoGithub>
                 </a>
               </li>
-              <li>
+              <li className={style['list-item']}>
                 <a href='https://www.facebook.com/alexandru.maries28' target='_blank' rel="noreferrer">
                   <LogoFacebook
                     color={"white"}
-                    width={'25%'}
-                    height={'25%'}>
+                    width={'40px'}
+                    height={'40px'}>
                   </LogoFacebook>
                 </a>
               </li>

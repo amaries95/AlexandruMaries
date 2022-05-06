@@ -2,14 +2,23 @@
     margin-top: 5px;
     background-color: darkcyan;
     border-radius: 0%;
+    height: 100%;
 }
 
-.list {
-    vertical-align: baseline;
+.social-links {
+    position: relative;
 }
 
-.list li {
+.social-links ul {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.social-links li {
+    margin-right: 100px;
     display: inline;
-    vertical-align: baseline;
+}
 
+.list-item:last-child {
+    margin-right: 0;
 }
