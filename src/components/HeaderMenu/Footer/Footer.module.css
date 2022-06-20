@@ -3,27 +3,17 @@
     background-color: darkcyan;
     border-radius: 0%;
     height: 100%;
+    text-align: center;
+    justify-content: baseline;
+    vertical-align: middle;
 }
 
-.social-links {
-    position: relative;
+.centering {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.social-links ul {
-    display: inline-block;
-    margin-top: 20px;
-}
-
-.social-links li {
-    margin-right: 100px;
-    display: inline;
-}
-
-.social-links li:last-child {
-    margin-right: 0;
-}
-
-@media only screen and (max-width: 1300px) {
+/* @media only screen and (max-width: 1300px) {
     .social-links li {
         display: block;
         margin-right: 0;
@@ -34,4 +24,4 @@
         margin-bottom: 0;
     }
     
-}
+} */
