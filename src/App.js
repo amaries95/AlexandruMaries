@@ -18,7 +18,7 @@ function App() {
           <Col xs={3} className="col-divider">
             <HeaderMenu />
           </Col>
-          <Col>
+          <Col className="content-container">
             <Routes>
               <Route path="/AlexandruMaries/" element={<Home />}></Route>
               <Route

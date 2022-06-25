@@ -30,15 +30,13 @@
 }
 
 @media only screen and (max-width: 800px) {
-    .full-text {
-        display: none;
+    .option li a span {
+        font-size: 85%;
     }
+}
 
-    .short-text {
-        display: inline-block;
+@media only screen and (max-width: 650px) {
+    .option li a span {
+        font-size: 78%;
     }
-
-
-
-
 }

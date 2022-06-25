@@ -1,27 +1,23 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import { Col, Container, Row } from 'react-bootstrap';
-import { LogoFacebook, LogoGithub, LogoLinkedin } from "react-ionicons";
+import { LogoGithub, LogoLinkedin } from 'react-ionicons';
 import style from './Footer.module.css';
 
 export default function Footer(props) {
   return (
-    <Container className={style['bottom-info']}>
-      <Row className="h-25">
-        <Col>
-          <a
-              href="https://www.linkedin.com/in/alexandrumaries"
-              target="_blank"
-              rel="noreferrer"
-            >
+    <div className={style['bottom-info']}>
+      <div className={style.icon}>
+        <a href="https://www.linkedin.com/in/alexandrumaries"
+          target="_blank"
+          rel="noreferrer">
               <LogoLinkedin
                 color={'white'}
                 width={'40px'}
-                height={'40px'}
-              ></LogoLinkedin>
-            </a>
-        </Col>
-        <Col>
-          <a
+                height={'40px'}>
+                </LogoLinkedin>
+        </a>
+      </div>
+      <div className={style.icon}>
+      <a
               href="https://github.com/amaries95"
               target="_blank"
               rel="noreferrer">
@@ -31,20 +27,18 @@ export default function Footer(props) {
                 height={'40px'}
               ></LogoGithub>
             </a>
-        </Col>
-        <Col>
-        <a
-          href="https://www.facebook.com/alexandru.maries28"
+      </div>
+      <div className={style.icon}>
+        <a href="https://www.linkedin.com/in/alexandrumaries"
           target="_blank"
           rel="noreferrer">
-          <LogoFacebook
-            color={'white'}
-            width={'40px'}
-            height={'40px'}
-          ></LogoFacebook>
+              <LogoLinkedin
+                color={'white'}
+                width={'40px'}
+                height={'40px'}>
+                </LogoLinkedin>
         </a>
-        </Col>
-      </Row>
-    </Container>
+      </div>
+    </div>
   );
 }

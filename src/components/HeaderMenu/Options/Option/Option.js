@@ -7,9 +7,7 @@ export default function Option(props)
     <div className={style.option}>
        <li>
         <Link to={`/AlexandruMaries/${props.text.toLowerCase() === 'home' ? ' ' : props.text.toLowerCase()}`}>
-            <span className={style['full-text']}>{props.text}</span>
-            <span className={style['short-text']}>{props.text.substring(0,3)}</span>
-            <span className={style['hidden-text']}></span>
+            <span>{props.text}</span>
         </Link>
         </li>
     </div>);

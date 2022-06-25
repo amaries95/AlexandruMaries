@@ -1,0 +1,43 @@
+.container {
+    background-color: rgb(231, 243, 243);
+    padding: 1%;
+    border-radius: 20px;
+    border: 2px solid darkcyan;
+    overflow: hidden;
+}
+
+.details {
+    padding: 1%;
+}
+
+.details p{
+    display: inline-block;
+    margin-bottom: 0.5%;
+}
+
+.description li:last-child{
+    margin-bottom: 0;
+}
+
+.description ul{
+    margin-bottom: 0;
+    padding-top: 0.5%;
+}
+
+.role{
+    color: rgb(158, 158, 158);
+    display: block !important;
+    margin: 0 !important;
+    padding-left: 0.5% !important;
+    font-style: italic;
+}
+
+.period-of-time {
+    margin-left: 1%;
+    color: rgb(158, 158, 158);
+}
+
+.company-name {
+    font-weight: 600;
+    font-size: 16px;
+}

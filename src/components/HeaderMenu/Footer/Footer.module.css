@@ -1,27 +1,34 @@
 .bottom-info {
-    margin-top: 5px;
     background-color: darkcyan;
     border-radius: 0%;
-    height: 100%;
-    text-align: center;
-    justify-content: baseline;
-    vertical-align: middle;
+    height: 10%;
+    width: 100%;
+    padding-bottom: 3%;
+    display: flex;
 }
 
-.centering {
-    margin-top: auto;
-    margin-bottom: auto;
+.icon{
+    margin: auto;
+    display: inline-block;
 }
 
-/* @media only screen and (max-width: 1300px) {
-    .social-links li {
-        display: block;
-        margin-right: 0;
-        margin-bottom: 70px;
+@media only screen and (max-width: 1000px) {
+    .icon a span svg {
+        height: 30px;
+        width: 30px;
     }
+}
 
-    .social-links li:last-child {
-        margin-bottom: 0;
+@media only screen and (max-width: 700px) {
+    .icon a span svg {
+        height: 25px;
+        width: 25px;
     }
-    
-} */
+}
+
+@media only screen and (max-height: 700px) {
+    .icon a span svg {
+        height: 30px;
+        width: 30px;
+    }
+}
