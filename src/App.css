@@ -10,9 +10,15 @@
 
 .container-padding{
   padding: 0;
+  overflow-x: hidden;
 }
 
 .content-container {
   overflow: auto;
   margin-left: 25%;
+  width: 75vw;
+}
+
+.col-3 {
+  width: 25vw;
 }

@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       <Container fluid={true} className="container-padding">
-        <Row className="vh-100 gx-0">
+        <Row className="vh-100 vw-100 gx-0">
           <Col xs={3} className="col-divider">
             <HeaderMenu />
           </Col>

@@ -1,0 +1,15 @@
+.container {
+    width: 50%;
+    padding: 0% 0% 0% 3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.percentage {
+    padding-left: 85%;
+    margin: 0;
+}
+
+.skill-name {
+    margin: 0;
+}
