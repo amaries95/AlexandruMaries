@@ -2,7 +2,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { Col, Container, Row } from 'react-bootstrap';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Education from './components/Education/Education';
 import Experience from './components/Experience/Experience';
 import HeaderMenu from './components/HeaderMenu/HeaderMenu';
 import Home from './components/Home/Home';
@@ -25,10 +24,10 @@ function App() {
                 path="/AlexandruMaries/experience"
                 element={<Experience />}
               ></Route>
-              <Route
+              {/* <Route
                 path="/AlexandruMaries/education"
                 element={<Education></Education>}
-              ></Route>
+              ></Route> */}
               <Route
                 path="/AlexandruMaries/projects"
                 element={<Projects></Projects>}
