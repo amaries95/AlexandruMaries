@@ -4,7 +4,7 @@ import style from './Options.module.css';
 
 export default function Options(props)
 {
-    const HeaderOptions = ["HOME", "EXPERIENCE", "PROJECTS", "SKILLS", "RECOMMENDATION"];
+    const HeaderOptions = ["HOME", "EXPERIENCE", "PROJECTS", "SKILLS", "REFERENCES"];
 
     return(
         <ListGroup className={style.options}>

@@ -1,0 +1,21 @@
+.reference-card{
+    padding: 1%;
+    width: 75%;
+    margin: 0% 0% 5% 0%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reference-card p {
+    margin: 0;
+}
+
+.reference {
+    margin: 0%;
+}
+
+.author {
+    font-style: italic;
+    word-wrap: break-word;
+    margin-left: 62%;
+}

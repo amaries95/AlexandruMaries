@@ -6,7 +6,7 @@ import Experience from './components/Experience/Experience';
 import HeaderMenu from './components/HeaderMenu/HeaderMenu';
 import Home from './components/Home/Home';
 import Projects from './components/Projects/Projects';
-import Recommendation from './components/Recommendation/Recommendation';
+import References from './components/References/References';
 import Skills from './components/Skills/Skills';
 
 function App() {
@@ -37,8 +37,8 @@ function App() {
                 element={<Skills></Skills>}
               ></Route>
               <Route
-                path="/AlexandruMaries/recommendation"
-                element={<Recommendation></Recommendation>}
+                path="/AlexandruMaries/references"
+                element={<References/>}
               ></Route>
             </Routes>
           </Col>
