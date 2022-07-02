@@ -1,6 +1,11 @@
+import AboutMe from './AboutMe/AboutMe';
+import style from './Home.module.css';
+
 export default function Home(props)
 {
     return (
-        <p>Home Component</p>
+        <div className={style.container}>
+            <AboutMe></AboutMe>
+        </div>
     );
 }
