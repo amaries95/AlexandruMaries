@@ -1,13 +1,14 @@
 .reference-card{
-    padding: 1%;
+    padding: 2%;
     width: 75%;
     margin: 0% 0% 5% 0%;
     display: flex;
     flex-wrap: wrap;
+    border-radius: 30px;
 }
 
 .reference-card p {
-    margin: 0;
+    margin: 0%;
 }
 
 .reference {
