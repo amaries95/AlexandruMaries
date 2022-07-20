@@ -1,20 +1,21 @@
 import style from './ReferenceCard.module.css';
 
 export default function ReferenceCard(props){
-const styles = {
-    card: {
-        backgroundColor: props.backgroundColor,
-        float: props.position,
-    },
-}
+    // const styles = {
+    //     card: {
+    //         backgroundColor: props.backgroundColor,
+    //         // float: props.position
+    //     },
+    // }
+
+    console.log(props.author);
+
 
     return (
-        <div style={styles.card} className={style['reference-card']}>
-            <p className={style.reference}>dsadsa dsadsdsad sa dsadsadsadsa
-            dsadsadsad sadsad sa s adsad sadsadsa dsasd dsad dsad sadsa dsadsa 
-            dsads adsdsds ad s dsadsdsd asdas ddsa sa sa dsadas</p>
+        <div className={style['reference-card']}>
+            <p className={style.reference}>{props.summary}</p>
             <div className={style.author}>
-                <p>~ Author Name (Embedded Software Developer)</p>
+                <p>~ {props.author} ({props.jobTitleAuthor})</p>
             </div>
         </div>
     )

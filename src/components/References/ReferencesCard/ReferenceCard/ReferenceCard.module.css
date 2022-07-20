@@ -3,12 +3,28 @@
     width: 75%;
     margin: 0% 0% 5% 0%;
     display: flex;
-    flex-wrap: wrap;
     border-radius: 30px;
+    flex-flow: column wrap;
+}
+
+.reference-card:nth-of-type(odd)
+{
+    float: left;
+    background-color: rgb(125,185,200);
+}
+
+.reference-card:nth-of-type(even)
+{
+    float: right;
+    background-color: rgb(212, 212, 109) !important;
 }
 
 .reference-card p {
     margin: 0%;
+}
+
+.reference-card:last-child {
+    margin-bottom: 300px;
 }
 
 .reference {
@@ -18,5 +34,4 @@
 .author {
     font-style: italic;
     word-wrap: break-word;
-    margin-left: 62%;
 }
