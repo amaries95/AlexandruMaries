@@ -13,6 +13,17 @@
     margin: 2% 0% 2% 2%;
 }
 
+button {
+    background-color: transparent;
+    border: none;
+    margin-left: 2%;
+}
+
+.icon span svg {
+    height: 40px;
+    width: 40px;
+}
+
 input {
     margin: 2% 2% 2% 0%;
     border: none;
