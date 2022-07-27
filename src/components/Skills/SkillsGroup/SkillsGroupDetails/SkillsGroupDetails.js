@@ -5,12 +5,12 @@ export default function SkillsGroupDetails(props)
 {
     return (
         <div className={style.container}>
-            <Skill></Skill>
-            <Skill></Skill>
-            <Skill></Skill>
-            <Skill></Skill>
-            <Skill></Skill>
+            {props.Skills.map((skill) => (
+                <Skill 
+                key={Math.random()}
+                PercentageLevel={skill.PercentageLevel} SkillName={skill.SkillName}
+                />
+            ))}
         </div>
-        
     );
 }

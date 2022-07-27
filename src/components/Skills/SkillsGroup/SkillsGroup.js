@@ -5,8 +5,8 @@ export default function SkillsGroup(props)
 {
     return (
         <div className={style.container}>
-            <h3>Technical</h3>
-            <SkillsGroupDetails></SkillsGroupDetails>
+            <h3>{props.SkillsGroup.Category}</h3>
+            <SkillsGroupDetails Skills={props.SkillsGroup.Skills}></SkillsGroupDetails>
         </div>
         
     );

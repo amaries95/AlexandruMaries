@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import { LogoGithub, LogoLinkedin } from 'react-ionicons';
+import { DocumentText, LogoGithub, LogoLinkedin } from 'react-ionicons';
 import style from './Footer.module.css';
 
 export default function Footer(props) {
@@ -29,14 +29,14 @@ export default function Footer(props) {
             </a>
       </div>
       <div className={style.icon}>
-        <a href="https://www.linkedin.com/in/alexandrumaries"
+        <a href="https://www.icloud.com/iclouddrive/07e2kVbdkTPFuwYhnvPeBmiKw#CV"
           target="_blank"
           rel="noreferrer">
-              <LogoLinkedin
+              <DocumentText
                 color={'white'}
                 width={'40px'}
                 height={'40px'}>
-                </LogoLinkedin>
+                </DocumentText>
         </a>
       </div>
     </div>

@@ -5,10 +5,10 @@ export default function Skill(props)
 {
     return (
         <div className={style.container}>
-                <p className={style['skill-name']}>React</p>
-                <p className={style.percentage}>85%</p>
+                <p className={style['skill-name']}>{props.SkillName}</p>
+                <p className={style.percentage}>{`${props.PercentageLevel}%`}</p>
 
-               <ProgressBar/>
+               <ProgressBar PercentageLevel={props.PercentageLevel}/>
                 
         </div>
         

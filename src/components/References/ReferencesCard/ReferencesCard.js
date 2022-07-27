@@ -12,12 +12,6 @@ export default function ReferencesCard(props)
                 author={reference.author}
                 jobTitleAuthor={reference.jobTitleAuthor}/>
             ))}
-            
-            {/* <ReferenceCard backgroundColor='rgb(212, 212, 109)' position='right'/>
-            <ReferenceCard backgroundColor='rgb(143, 209, 143)' position='left'/>
-            <ReferenceCard backgroundColor='rgb(125,185,200)' position='right'/>
-            <ReferenceCard backgroundColor='rgb(212, 212, 109)' position='left'/>
-            <ReferenceCard backgroundColor='rgb(143, 209, 143)' position='right'/> */}
         </div>
     );
 }

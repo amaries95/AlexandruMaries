@@ -1,0 +1,17 @@
+.container {
+    position: fixed;
+    bottom: 0;
+    margin: 2% 0% 2% 2%;
+}
+
+button {
+    background-color: white;
+    border: none;
+    padding: 0%;
+    border-radius: 50%;
+}
+
+.icon span svg {
+    height: 60px;
+    width: 60px;
+}

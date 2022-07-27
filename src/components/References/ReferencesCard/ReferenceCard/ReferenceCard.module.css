@@ -1,10 +1,8 @@
 .reference-card{
-    padding: 2%;
+    padding: 1% 2% 1% 2%;
     width: 75%;
     margin: 0% 0% 5% 0%;
-    display: flex;
-    border-radius: 30px;
-    flex-flow: column wrap;
+    border-radius: 20px;
 }
 
 .reference-card:nth-of-type(odd)
@@ -16,22 +14,53 @@
 .reference-card:nth-of-type(even)
 {
     float: right;
-    background-color: rgb(212, 212, 109) !important;
-}
-
-.reference-card p {
-    margin: 0%;
+    background-color: rgb(216, 216, 108) !important;
 }
 
 .reference-card:last-child {
-    margin-bottom: 300px;
+    margin-bottom: 25%;
 }
 
-.reference {
+.reference-container {
+    margin-bottom: 0.5%;
+}
+
+p {
     margin: 0%;
 }
 
-.author {
+.author-container {
+    color: gray;
     font-style: italic;
-    word-wrap: break-word;
+    float: right;
+}
+
+@media only screen and (max-width: 1350px) {
+    .reference-card:last-child {
+        margin-bottom: 30%;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .reference-card:last-child {
+        margin-bottom: 40%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .reference-card:last-child {
+        margin-bottom: 45%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .reference-card:last-child {
+        margin-bottom: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .reference-card:last-child {
+        margin-bottom: 55%;
+    }
 }
