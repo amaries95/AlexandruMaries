@@ -5,12 +5,14 @@ export default function ProjectCards(props)
 {
     return (
         <div className={style.container}>
-            <ProjectCard description="&emsp;The summary of the projectdsads dsads ds adsad ds ads  dsadsdsa dsa dsadsdsadsa dsa dsdsadsads dsadsdsa
-            dsadsn dsnndsn ndnsndnnsnds n ndnsndn sndn sndn ns ndnns dnsnnd sn ndnsnd nsndnsdnd sndnsndn sdndnsam mndsmandmns ndnsnmnadmsn"/>
-            <ProjectCard description="dsa"/>
-            <ProjectCard description="dsadsa dsjhajd djnsajndj nj jn jdjsajn jnjd nsajn jdnsajndj j jdnsaj jdnj nja jdnajndjsnajn djaprfthal kl"/>
-            <ProjectCard/>
-            <ProjectCard/>
+            {props.Projects.map((project) => (
+                <ProjectCard 
+                key={Math.random()}
+                Title={project.Title}
+                Summary={project.Summary}
+                Technologies={project.Technologies}
+                />
+            ))}
         </div>
     );
 }
