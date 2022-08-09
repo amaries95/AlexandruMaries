@@ -45,6 +45,12 @@
     }
 }
 
+@media only screen and (max-width: 700px) {
+    .person {
+        
+    }    
+}
+
 @media only screen and (max-width: 550px) {
     .person h3 {
         font-size: 95%;

@@ -5,6 +5,7 @@ import './App.css';
 import Experience from './components/Experience/Experience';
 import HeaderMenu from './components/HeaderMenu/HeaderMenu';
 import Home from './components/Home/Home';
+import MobileHeaderMenu from './components/MobileHeaderMenu/MobileHeaderMenu';
 import Projects from './components/Projects/Projects';
 import References from './components/References/References';
 import Skills from './components/Skills/Skills';
@@ -14,6 +15,7 @@ function App() {
     <Router>
       <Container fluid={true} className="container-padding">
         <Row className="vh-100 vw-100 gx-0">
+          <MobileHeaderMenu></MobileHeaderMenu>
           <Col xs={3} className="col-divider">
             <HeaderMenu />
           </Col>

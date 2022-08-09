@@ -9,8 +9,10 @@ export default function ProjectCard(props)
             <div className={style['project-technologies']}>
                 <p>Technologies</p>
                 <ul>
-                    {props.Technologies.map((technology) => (   
-                        <li>{technology}</li>
+                    {props.Technologies.map((technology) => (
+                        <li key={Math.random()}>
+                            {technology}
+                        </li>
                     ))}
                 </ul>
             </div>
