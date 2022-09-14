@@ -1,9 +1,9 @@
 .container {
     padding: 1%;
     border-radius: 20px;
-    border: 1px solid darkcyan;
+    border: 2px solid darkcyan;
     overflow: hidden;
-    /* box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2); */
+    box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
 }
 
 .details {
@@ -19,13 +19,26 @@
     margin-bottom: 0;
 }
 
+.description {
+    margin-left: 2%;
+}
+
 .description ul{
     margin-bottom: 0;
     padding-top: 0.5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.description ul li{
+    list-style-type: circle;
+    margin-right: 7%;
+    margin-top: 1%;
+    min-width: 40%;
 }
 
 .role{
-    color: rgb(158, 158, 158);
+    color: rgb(111, 192, 187);
     display: block !important;
     margin: 0 !important;
     padding-left: 0.5% !important;
@@ -39,5 +52,5 @@
 
 .company-name {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 17px;
 }

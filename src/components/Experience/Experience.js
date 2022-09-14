@@ -5,16 +5,56 @@ export default function Experience(props)
 {
     const experience = [
         {
-            Company: 'PlainConcepts',
+            Company: 'Plain Concepts',
             Period: 'March 2022 - Present',
             Position: 'Full Stack Web Developer',
-            Responsabilities: 'bla bla bla'
+            Responsabilities: [
+                'developing new features in frontend and backend',
+                'fixing UI and functionality bugs',
+                'interviewing new candidates',
+                'planning and estimating new features',
+                'unit and integration testing',
+                'customer service'
+            ]
         },
         {
             Company: 'Robert Bosch',
             Period: 'Dec 2021 - March 2022',
-            Position: 'Full Stack Web Developer',
-            Responsabilities: 'bla bla bla'
+            Position: '.Net Web Developer',
+            Responsabilities: [
+                'unit testing',
+                'refactoring'
+            ]
+        },
+        {
+            Company: 'Robert Bosch',
+            Period: 'Jan 2020 - Dec 2021',
+            Position: '.Net Desktop Developer',
+            Responsabilities: [
+                'developed backend and UI features',
+                'code reviews',
+                'manual UI, unit and integration testing',
+                'bug fixing',
+                'manual release'
+            ]
+        },
+        {
+            Company: 'Robert Bosch',
+            Period: 'Aug 2018 - Jan 2020',
+            Position: 'Software Embedded Engineer',
+            Responsabilities: [
+                'agile methodology',
+                'developed features based on requirements',
+                'fixing QAC warning in C++'
+            ]
+        },
+        {
+            Company: 'Robert Bosch',
+            Period: 'Jul 2017 - Aug 2018',
+            Position: 'Working Student',
+            Responsabilities: [
+                'developed bachelor\'s degree'
+            ]
         },
     ];
 
@@ -24,10 +64,10 @@ export default function Experience(props)
             {experience.map((exp) => (
                 <ExperienceElement 
                 key={Math.random()}
-                Company={experience.Company}
-                Period={experience.Period}
-                Position={experience.Position}
-                Responsabilities={experience.Responsabilities}/>
+                Company={exp.Company}
+                Period={exp.Period}
+                Position={exp.Position}
+                Responsabilities={exp.Responsabilities}/>
             ))}
         </div>
     );

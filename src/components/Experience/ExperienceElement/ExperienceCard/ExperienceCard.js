@@ -1,19 +1,19 @@
 import style from './ExperienceCard.module.css';
 
-export default function ExperienceCard()
+export default function ExperienceCard(props)
 {
     return (
         <div className={style.container}>
             <div className={style['details']}>
-                <p className={style['company-name']}>Robert Bosch</p>
+                <p className={style['company-name']}>{props.Company}</p>
                 <p className={style['period-of-time']}>-</p>
-                <p className={style['period-of-time']}>Dec 2021 - Aug 2022 (6 months)</p>
-                <p className={style.role}>Full Stack Web Developer</p>
+                <p className={style['period-of-time']}>{props.Period}</p>
+                <p className={style.role}>{props.Position}</p>
                 <div className={style.description}>
                     <ul>
-                        <li>Technologies</li>
-                        <li>Project</li>
-                        <li>Responsabilities</li>
+                        {props.Responsabilities.map((resp) => (
+                            <li key={Math.random()}>{resp}</li>
+                        ))}
                     </ul>
                 </div>
             </div>
