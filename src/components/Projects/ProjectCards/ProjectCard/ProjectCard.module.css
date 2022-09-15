@@ -35,6 +35,7 @@
 .project-technologies ul {
     display: flex;
     flex-wrap: wrap;
+    margin: 0% 0% 2% 0%;
 }
 
 .project-technologies ul li{
@@ -57,5 +58,9 @@
 @media only screen and (max-width: 500px){
     .project-technologies ul {
         display: inline-block;
+    }
+    
+    .project-technologies ul li{
+        font-size: 13px;
     }
 }

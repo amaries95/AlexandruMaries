@@ -10,6 +10,17 @@ export default function References(props)
     const [isLoading, setIsLoading] = useState(false);
     const [isReferenceFormHidden, setIsReferenceFormHidden] = useState(true);
 
+    const noReferenceYetCard = [{
+        summary: "No references yet. Be the first one who add a reference for Alex. :)",
+        author: "Server Response",
+        jobTitleAuthor: "Azure Database"
+    }];
+    const loadingReferenceCard = [{
+        summary: "Reading all references from the server...",
+        author: "Frontend App",
+        jobTitleAuthor: "React"
+    }];
+
     const getReferences = useCallback(async () => {
         setIsLoading(true);
         
@@ -38,9 +49,9 @@ export default function References(props)
     return (
         <div className={style.container}>
             <h3>References</h3>
+            {isLoading && <ReferencesCard referencesProp={loadingReferenceCard}></ReferencesCard>}
+            {!isLoading && references.length === 0 && <ReferencesCard referencesProp={noReferenceYetCard}></ReferencesCard>}
             {!isLoading && <ReferencesCard referencesProp={references}/>}
-            {isLoading && <p>Loading...</p>}
-            {!isLoading && references.length === 0 && <p>No references yet.</p>}
             {!isReferenceFormHidden && <ReferenceForm ToggleAddReference={toggleReferenceForm} TransferNewReferenceToParent={onTransferCalled}></ReferenceForm>}
             {isReferenceFormHidden && <AddReference ToggleAddReference={toggleReferenceForm}></AddReference>}
         </div>

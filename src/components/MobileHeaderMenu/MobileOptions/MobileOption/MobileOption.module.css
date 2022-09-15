@@ -23,3 +23,9 @@
     font-size: 12px;
     font-weight: 500;
 }
+
+@media only screen and (max-width: 350px) {
+    .option li a {
+        font-size: 10px;
+    }
+}

@@ -1,5 +1,5 @@
 .container {
-    padding: 1%;
+    padding: 15px;
     border-radius: 20px;
     border: 2px solid darkcyan;
     overflow: hidden;
@@ -17,10 +17,6 @@
 
 .description li:last-child{
     margin-bottom: 0;
-}
-
-.description {
-    margin-left: 2%;
 }
 
 .description ul{
@@ -53,4 +49,28 @@
 .company-name {
     font-weight: 600;
     font-size: 17px;
+}
+
+.separator {
+    width: 100%;
+    display: flex;
+}
+
+.sep1 {
+    width: 50%;
+}
+
+.sep2 {
+    width: 50%;
+    border-left: 2px solid darkcyan;
+}
+
+@media screen and (max-width: 500px) {
+    .description ul li {
+        font-size: 14px;
+    }
+
+    .description ul{
+        display: block;
+    }
 }
