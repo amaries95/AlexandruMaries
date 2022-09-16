@@ -12,7 +12,8 @@ export default function Footer(props) {
               <LogoLinkedin
                 color={'white'}
                 width={'40px'}
-                height={'40px'}>
+                height={'40px'}
+                title="Linkedin">
                 </LogoLinkedin>
         </a>
       </div>
@@ -25,6 +26,7 @@ export default function Footer(props) {
                 color={'white'}
                 width={'40px'}
                 height={'40px'}
+                title='Github'
               ></LogoGithub>
             </a>
       </div>
@@ -35,7 +37,8 @@ export default function Footer(props) {
               <DocumentText
                 color={'white'}
                 width={'40px'}
-                height={'40px'}>
+                height={'40px'}
+                title='Download CV'>
                 </DocumentText>
         </a>
       </div>

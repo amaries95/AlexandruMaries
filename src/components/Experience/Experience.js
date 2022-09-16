@@ -9,7 +9,7 @@ export default function Experience(props)
             Period: 'March 2022 - Present',
             Position: 'Full Stack Web Developer',
             Responsabilities: [
-                'developing new features in frontend and backend',
+                'developing new features on frontend and backend side',
                 'fixing UI and functionality bugs',
                 'interviewing new candidates',
                 'planning and estimating new features',

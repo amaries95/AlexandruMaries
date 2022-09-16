@@ -20,8 +20,8 @@
     margin: 4% 0% 3% 0%;
 }
 
-.describe-me p {
-    padding: 3% 3% 0% 3%;
+.about-me-container {
+    margin-top: 6%;
 }
 
 .describe-me:last-child {
@@ -30,7 +30,7 @@
 
 .basic-info {
     font-style: normal;
-    margin: 7% 0% 0% 7%;
+    margin: 6% 0% 0% 6%;
     display: flex;
 }
 

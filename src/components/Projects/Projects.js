@@ -16,7 +16,7 @@ export default function Projects(props)
         },
         {
             Title: 'Personal Portofolio',
-            Summary: 'Started to work on a personal portfolio for the sake of learning React. It\'s been used the GitHub pages for deployment. The project is still in progress as I\'m working on it in my free time.',
+            Summary: 'Started to work on a personal portfolio for the sake of learning React. It\'s been used the GitHub pages for deployment. It has a small application on backend deployed in Azure and a DB where the references are saved. It\'s actually the project you\'re looking at.',
             Technologies: ['Javascript', 'React', 'HTML', 'CSS', 'Net 6.0', 'Entity Framework Core', 'Azure App Service']
         },
         {
