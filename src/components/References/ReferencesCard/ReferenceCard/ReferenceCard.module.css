@@ -8,13 +8,13 @@
 .reference-card:nth-of-type(odd)
 {
     float: left;
-    background-color: rgb(125,185,200);
+    background-color: rgb(132, 201, 218);
 }
 
 .reference-card:nth-of-type(even)
 {
     float: right;
-    background-color: rgb(216, 216, 108) !important;
+    background-color: rgb(236, 236, 141) !important;
 }
 
 .reference-card:last-child {

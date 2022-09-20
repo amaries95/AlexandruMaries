@@ -11,7 +11,7 @@ export default function References(props)
     const [isReferenceFormHidden, setIsReferenceFormHidden] = useState(true);
 
     const noReferenceYetCard = [{
-        summary: "No references yet. Be the first one who add a reference for Alex. :)",
+        summary: "No references yet. Be the first one who add a reference for Alex. 🙂",
         author: "Server Response",
         jobTitleAuthor: "Azure Database"
     }];
