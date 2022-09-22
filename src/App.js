@@ -26,10 +26,6 @@ function App() {
                 path="/AlexandruMaries/experience"
                 element={<Experience />}
               ></Route>
-              {/* <Route
-                path="/AlexandruMaries/education"
-                element={<Education></Education>}
-              ></Route> */}
               <Route
                 path="/AlexandruMaries/projects"
                 element={<Projects></Projects>}
