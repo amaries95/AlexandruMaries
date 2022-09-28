@@ -10,6 +10,11 @@ export default function Projects(props)
             Technologies: ['.Net 6.0', 'xUnit', 'FluentAssertion', 'Moq']
         },
         {
+            Title: 'Employee Capacity Management',
+            Summary: 'Contributed to the internal tool  features of a company for managing resources on the projects.',
+            Technologies: ['.Net 6.0', 'xUnit', 'FluentAssertion', 'Moq', 'React', 'HTML', 'CSS', 'EntityFrameworkCore']
+        },
+        {
             Title: 'Roadmap Features Page',
             Summary: 'A new page was created with further features organized in a table for a specific project. The table content was read from a JSON file. The project was a web application developed fully in node.js in which the frontend part was done with the help of the Handlebars template engine.',
             Technologies: ['Javascript', 'Handlebars', 'node.js']

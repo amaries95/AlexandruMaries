@@ -7,8 +7,8 @@ export default function Skills(props)
         Category: 'Profile Related Skills',
         Skills: [
             {SkillName: '.Net', PercentageLevel: '85'},
-            {SkillName: 'React', PercentageLevel: '50'},
-            {SkillName: 'Javascript', PercentageLevel: '55'},
+            {SkillName: 'React', PercentageLevel: '45'},
+            {SkillName: 'Javascript', PercentageLevel: '40'},
             {SkillName: 'HTML', PercentageLevel: '65'},
             {SkillName: 'CSS', PercentageLevel: '50'},
             {SkillName: 'JQuery', PercentageLevel: '40'},
@@ -23,7 +23,7 @@ export default function Skills(props)
         Skills: [
             {SkillName: 'WPF', PercentageLevel: '85'},
             {SkillName: 'Linux', PercentageLevel: '57'},
-            {SkillName: 'C++', PercentageLevel: '65'},
+            {SkillName: 'C++', PercentageLevel: '55'},
             {SkillName: 'Control Engineering', PercentageLevel: '40'},
             {SkillName: 'Python', PercentageLevel: '35'},
             {SkillName: 'Embedeed Systems', PercentageLevel: '42'},
@@ -36,7 +36,7 @@ export default function Skills(props)
             {SkillName: 'Mentoring', PercentageLevel: '45'},
             {SkillName: 'Communication', PercentageLevel: '65'},
             {SkillName: 'Sales', PercentageLevel: '77'},
-            {SkillName: 'Public Speaking', PercentageLevel: '75'},
+            {SkillName: 'Public Speaking', PercentageLevel: '60'},
         ]
     };
     

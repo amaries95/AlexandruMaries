@@ -29,7 +29,7 @@ export default function MobileFooter(props) {
             </a>
       </div>
       <div className={style.icon}>
-        <a href="https://www.icloud.com/iclouddrive/07e2kVbdkTPFuwYhnvPeBmiKw#CV"
+        <a href="https://www.icloud.com/iclouddrive/067peGQrqYYPxdPchnT7S6drA#CV"
           target="_blank"
           rel="noreferrer">
               <DocumentText

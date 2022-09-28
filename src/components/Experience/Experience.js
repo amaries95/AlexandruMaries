@@ -14,7 +14,8 @@ export default function Experience(props)
                 'interviewing new candidates',
                 'planning and estimating new features',
                 'unit and integration testing',
-                'customer service'
+                'customer service',
+                'holding trainings about different topics'
             ]
         },
         {
@@ -35,7 +36,8 @@ export default function Experience(props)
                 'code reviews',
                 'manual UI, unit and integration testing',
                 'bug fixing',
-                'manual release'
+                'manual release',
+                'mentoring interns'
             ]
         },
         {

@@ -12,7 +12,7 @@ export default function AboutMe(props)
                     <p>&emsp;&emsp;I'm a passionate software developer with experience on web and desktop development, who is always looking for new challenges in order to continue to learn and, of course, to consolidate the current knowledge.
                         <br></br>
                         <br></br>
-                        Some facts about my hobbies ... I love to travel, especially in hoilidays, but business trips are also fine for me. In my free time, I usually like to play tennis, hangout with my friends, or just enjoy a good wine, which I'm also passionate about.
+                        Some facts about my hobbies ... I love to travel, especially as a tourist, but business trips are also fine for me. In my free time, I usually like to play tennis, hangout with my friends, or just enjoy a good wine, which I'm also passionate about.
                     </p>
                 </div>
             </div>
