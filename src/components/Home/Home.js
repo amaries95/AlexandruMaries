@@ -6,7 +6,7 @@ export default function Home(props)
 {
     const basicInfo = [
         {Type: "date of birth", Info: "August 2"},
-        {Type: "email", Info: "alexandru.maries@gmail.com"},
+        {Type: "email", Info: "alexandru.maries@icloud.com"},
         {Type: "address", Info: "Cluj-Napoca, Romania"},
         {Type: "languages", Info: "Romanian, English"},
     ];
