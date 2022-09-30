@@ -7,13 +7,15 @@ export default function Options(props)
     const HeaderOptions = ["HOME", "EXPERIENCE", "PROJECTS", "SKILLS", "REFERENCES"];
 
     return(
-        <ListGroup className={style.options}>
+        <div className={style.options}>
+            <ListGroup>
             {HeaderOptions.map(option => 
                 {
                     return <Option
                     key={Math.random()}
                     text={option}></Option>;
                 })}
-        </ListGroup>
+            </ListGroup>
+        </div>
     );
 }
