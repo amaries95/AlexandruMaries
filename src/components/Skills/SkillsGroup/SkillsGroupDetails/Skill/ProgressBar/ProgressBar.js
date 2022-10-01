@@ -1,10 +1,18 @@
+import { useEffect } from 'react';
+import { useState } from 'react';
 import style from './ProgressBar.module.css';
 
 export default function ProgressBar(props)
 {
+    const [fillValue, setFillValue] = useState(0);
+
+    useEffect(() => {
+        setFillValue(props.PercentageLevel);
+    });
+
     const dynamicStyles = { 
         fill: { 
-            width: `${props.PercentageLevel}%`
+            width: `${fillValue}%`
         }, 
     } 
 
