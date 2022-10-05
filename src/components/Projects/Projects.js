@@ -11,17 +11,17 @@ export default function Projects(props)
         },
         {
             Title: 'Employee Capacity Management',
-            Summary: 'Contributed to the internal tool  features of a company for managing resources on the projects.',
-            Technologies: ['.Net 6.0', 'xUnit', 'FluentAssertion', 'Moq', 'React', 'HTML', 'CSS', 'EntityFrameworkCore']
+            Summary: 'Contributed to the internal tool  features of a company for asigning employees on different projects. ',
+            Technologies: ['.Net 6.0', 'xUnit', 'FluentAssertion', 'MediatR', 'Moq', 'React', 'HTML', 'CSS', 'EntityFrameworkCore']
         },
         {
             Title: 'Roadmap Features Page',
-            Summary: 'A new page was created with further features organized in a table for a specific project. The table content was read from a JSON file. The project was a web application developed fully in node.js in which the frontend part was done with the help of the Handlebars template engine.',
-            Technologies: ['Javascript', 'Handlebars', 'node.js']
+            Summary: 'A new page was created with new features organized in a table for a specific project. The table content was read from a JSON file. The project was a web application developed fully in node.js in which the frontend part was done with the help of the Handlebars template engine.',
+            Technologies: ['Javascript', 'Handlebars', 'node.js', 'CSS', 'HTML']
         },
         {
             Title: 'Personal Portofolio',
-            Summary: 'Started to work on a personal portfolio for the sake of learning React. It\'s been used the GitHub pages for deployment. It has a small application on backend deployed in Azure and a DB where the references are saved. It\'s actually the project you\'re looking at.',
+            Summary: 'Started to work on a personal portfolio for the sake of learning React. The frontend part is deployed in GitHub pages. It also has a small application on backend deployed in Azure and a DB where the references are saved. It\'s actually the project you\'re looking at.',
             Technologies: ['Javascript', 'React', 'HTML', 'CSS', 'Net 6.0', 'Entity Framework Core', 'Azure App Service']
         },
         {
@@ -36,8 +36,7 @@ export default function Projects(props)
         },
         {
             Title: 'Dynamic Office Allocation',
-            Summary: 'The purpose of this project is to improve the resources management of a company, by introducing a new concept of flexible desks. Based on initial preferences and previous feedback given by employees at the end of their day, it creates a network between people in which the nodes are represented by the employees and the edges are represented by the formed relationships (professional or social) between them. This is where we introduce the Machine Learning application which, based on the network formed till that moment, allocates each employee at the most suitable desk for him.'+
-            + 'Also there is a Graphical User Interface (GUI) implemented in C++ programming language and developed in the integrated development environment(IDE), Qt5. The interface program it was implemented in order to communicate with the machine learning algorithm, respectively to create a more accessible interface with the users.',
+            Summary: 'The purpose of this project is to improve the resources management of a company, by introducing a new concept of flexible desks. Based on initial preferences and previous feedback given by employees at the end of their day, it creates a network between people in which the nodes are represented by the employees and the edges are represented by the formed relationships (professional or social) between them. Also there is a Graphical User Interface (GUI) implemented in C++ programming language and developed in the integrated development environment(IDE), Qt5. The interface program it was implemented in order to communicate with the machine learning algorithm, respectively to create a more accessible interface with the users.',
             Technologies: ['C++', 'Linux', 'QT Framework', 'RPI3', 'R', 'SSH']
         }
     ];

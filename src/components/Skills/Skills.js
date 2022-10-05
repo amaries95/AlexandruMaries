@@ -35,7 +35,7 @@ export default function Skills(props)
         Skills: [
             {SkillName: 'Mentoring', PercentageLevel: '45'},
             {SkillName: 'Communication', PercentageLevel: '65'},
-            {SkillName: 'Sales', PercentageLevel: '77'},
+            {SkillName: 'Sales', PercentageLevel: '55'},
             {SkillName: 'Public Speaking', PercentageLevel: '60'},
         ]
     };

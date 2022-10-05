@@ -6,7 +6,8 @@ export default function Experience(props)
     const experience = [
         {
             Company: 'Plain Concepts',
-            Period: 'March 2022 - Present',
+            StartPeriod: new Date(2022, 2),
+            EndPeriod: new Date(), // present
             Position: 'Full Stack Web Developer',
             Responsabilities: [
                 'developing new features on frontend and backend side',
@@ -20,7 +21,8 @@ export default function Experience(props)
         },
         {
             Company: 'Robert Bosch',
-            Period: 'Dec 2021 - March 2022',
+            StartPeriod: new Date(2021, 11),
+            EndPeriod: new Date(2022, 2),
             Position: '.Net Web Developer',
             Responsabilities: [
                 'unit testing',
@@ -29,7 +31,8 @@ export default function Experience(props)
         },
         {
             Company: 'Robert Bosch',
-            Period: 'Jan 2020 - Dec 2021',
+            StartPeriod: new Date(2020, 0),
+            EndPeriod: new Date(2021, 11),
             Position: '.Net Desktop Developer',
             Responsabilities: [
                 'developed backend and UI features',
@@ -42,7 +45,8 @@ export default function Experience(props)
         },
         {
             Company: 'Robert Bosch',
-            Period: 'Aug 2018 - Jan 2020',
+            StartPeriod: new Date(2018, 7),
+            EndPeriod: new Date(2020, 0),
             Position: 'Software Embedded Engineer',
             Responsabilities: [
                 'agile methodology',
@@ -53,6 +57,8 @@ export default function Experience(props)
         {
             Company: 'Robert Bosch',
             Period: 'Jul 2017 - Aug 2018',
+            StartPeriod: new Date(2017, 6),
+            EndPeriod: new Date(2018, 7),
             Position: 'Working Student',
             Responsabilities: [
                 'developed bachelor\'s degree'
@@ -67,7 +73,8 @@ export default function Experience(props)
                 <ExperienceElement 
                 key={Math.random()}
                 Company={exp.Company}
-                Period={exp.Period}
+                StartPeriod={exp.StartPeriod}
+                EndPeriod={exp.EndPeriod}
                 Position={exp.Position}
                 Responsabilities={exp.Responsabilities}/>
             ))}
