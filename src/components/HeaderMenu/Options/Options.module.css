@@ -27,5 +27,12 @@
 @media only screen and (max-height: 400px) {
     .options {
         height: 70%;
+        padding-top: 40px;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    .options {
+        padding-top: 10%;
     }
 }
