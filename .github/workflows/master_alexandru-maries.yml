@@ -30,12 +30,6 @@ jobs:
       - name: display the current dir
         run: dir
       
-      - name: enter
-        run: cd
-     
-      - name: display
-        run: dir
-      
       - name: Zip artifact for deployment
         run: Compress-Archive ./build build.zip
 
