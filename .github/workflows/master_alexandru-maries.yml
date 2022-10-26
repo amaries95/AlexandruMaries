@@ -57,7 +57,7 @@ jobs:
 
       - name: enter to build folder
         run: |
-          cd build
+          cd build/build
           dir
 
       - name: 'Deploy to Azure Web App'
