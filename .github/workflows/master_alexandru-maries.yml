@@ -55,6 +55,11 @@ jobs:
       - name: extract artifact for deployment
         run: Expand-Archive build.zip
 
+      - name: enter to build folder
+        run: |
+          cd build
+          dir
+
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
@@ -62,4 +67,4 @@ jobs:
           app-name: 'alexandru-maries'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4894046EB31C4F6F94FDB95D5C6904F1 }}
-          package: ./build
+          package: .
