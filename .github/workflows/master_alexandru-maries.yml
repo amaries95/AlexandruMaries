@@ -49,6 +49,9 @@ jobs:
         with:
           name: node-app
 
+      - name: install unzip package
+        run: sudo apt-get install unzip
+
       - name: unzip artifact for deployment
         run: Expand-Archive release.zip .
 
