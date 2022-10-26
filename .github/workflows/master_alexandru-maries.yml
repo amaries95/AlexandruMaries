@@ -53,7 +53,7 @@ jobs:
         run: sudo apt-get install unzip
 
       - name: unzip artifact for deployment
-        run: unzip release.zip .
+        run: unzip release.zip
 
       - name: enter in the folder
         run: cd ./release
