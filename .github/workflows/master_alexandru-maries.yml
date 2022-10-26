@@ -37,13 +37,13 @@ jobs:
         run: dir
       
       - name: Zip artifact for deployment
-        run: Compress-Archive . release.zip
+        run: Compress-Archive ./build build.zip
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
           name: node-app
-          path: release.zip
+          path: build.zip
 
   deploy:
     runs-on: windows-latest
@@ -58,11 +58,8 @@ jobs:
         with:
           name: node-app
 
-      - name: install unzip package
-        run: sudo apt-get install unzip
-
-      - name: unzip artifact for deployment
-        run: unzip release.zip
+      - name: extract artifact for deployment
+        run: Expand-Archive build.zip
       
       - name: change directory
         run: cd release
@@ -74,4 +71,4 @@ jobs:
           app-name: 'alexandru-maries'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4894046EB31C4F6F94FDB95D5C6904F1 }}
-          package: .
+          package: ./build
