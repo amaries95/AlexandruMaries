@@ -21,21 +21,21 @@ function App() {
           </Col>
           <Col className="content-container">
             <Routes>
-              <Route path="/AlexandruMaries/" element={<Home />}></Route>
+              <Route path="" element={<Home />}></Route>
               <Route
-                path="/AlexandruMaries/experience"
+                path="/experience"
                 element={<Experience />}
               ></Route>
               <Route
-                path="/AlexandruMaries/projects"
+                path="/projects"
                 element={<Projects></Projects>}
               ></Route>
               <Route
-                path="/AlexandruMaries/skills"
+                path="/skills"
                 element={<Skills></Skills>}
               ></Route>
               <Route
-                path="/AlexandruMaries/references"
+                path="/references"
                 element={<References/>}
               ></Route>
             </Routes>

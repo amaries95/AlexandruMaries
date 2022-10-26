@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
       - uses: actions/checkout@v2
@@ -26,9 +26,18 @@ jobs:
           npm install
           npm run build --if-present
           npm run test --if-present
+
+      - name: display the current dir
+        run: dir
+      
+      - name: enter
+        run: cd
+     
+      - name: display
+        run: dir
       
       - name: Zip artifact for deployment
-        run: zip release.zip ./*
+        run: Compress-Archive . release.zip
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
@@ -37,7 +46,7 @@ jobs:
           path: release.zip
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: build
     environment:
       name: 'Production'
@@ -54,6 +63,9 @@ jobs:
 
       - name: unzip artifact for deployment
         run: unzip release.zip
+      
+      - name: change directory
+        run: cd release
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
