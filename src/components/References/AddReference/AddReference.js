@@ -1,4 +1,3 @@
-import { AddCircle } from 'react-ionicons';
 import style from './AddReference.module.css';
 
 export default function AddReference(props)
@@ -11,7 +10,7 @@ export default function AddReference(props)
     return(
         <div className={style.container}>
             <button className={style.icon} onClick={onAddReferenceButtonClicked}>
-                <AddCircle color={'darkcyan'}></AddCircle>
+                {/* <AddCircle color={'darkcyan'}></AddCircle> */}
             </button>
         </div>
     );    

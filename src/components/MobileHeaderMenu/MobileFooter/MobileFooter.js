@@ -1,5 +1,4 @@
 import 'bootstrap/dist/css/bootstrap.css';
-import { DocumentText, LogoGithub, LogoLinkedin } from 'react-ionicons';
 import style from './MobileFooter.module.css';
 
 export default function MobileFooter(props) {
@@ -9,35 +8,35 @@ export default function MobileFooter(props) {
         <a href="https://www.linkedin.com/in/alexandrumaries"
           target="_blank"
           rel="noreferrer">
-              <LogoLinkedin
+              {/* <LogoLinkedin
                 color={'white'}
                 width={'40px'}
                 height={'40px'}>
-                </LogoLinkedin>
-        </a>
+                </LogoLinkedin> */}
+        L</a>
       </div>
       <div className={style.icon}>
       <a
               href="https://github.com/amaries95"
               target="_blank"
               rel="noreferrer">
-              <LogoGithub
+              {/* <LogoGithub
                 color={'white'}
                 width={'40px'}
                 height={'40px'}
-              ></LogoGithub>
-            </a>
+              ></LogoGithub> */}
+            G</a>
       </div>
       <div className={style.icon}>
         <a href="https://www.icloud.com/iclouddrive/067peGQrqYYPxdPchnT7S6drA#CV"
           target="_blank"
           rel="noreferrer">
-              <DocumentText
+              {/* <DocumentText
                 color={'white'}
                 width={'40px'}
                 height={'40px'}>
-                </DocumentText>
-        </a>
+                </DocumentText> */}
+        CV</a>
       </div>
     </div>
   );
