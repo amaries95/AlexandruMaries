@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AlexandruMaries/static/css/main.892c3e89.css",
+    "main.js": "/AlexandruMaries/static/js/main.8709879b.js",
+    "static/media/photo.JPG": "/AlexandruMaries/static/media/photo.17711eefbb164574271e.JPG",
+    "static/media/wallpaper.jpg": "/AlexandruMaries/static/media/wallpaper.e1b3e669e2e35cac554f.jpg",
+    "index.html": "/AlexandruMaries/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.892c3e89.css",
+    "static/js/main.8709879b.js"
+  ]
+}
