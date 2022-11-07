@@ -21,7 +21,7 @@ function App() {
           </Col>
           <Col className="content-container">
             <Routes>
-              <Route path="" element={<Home />}></Route>
+              <Route path="/" element={<Home />}></Route>
               <Route
                 path="/experience"
                 element={<Experience />}
