@@ -24,7 +24,7 @@ export default function References(props)
     const getReferences = useCallback(async () => {
         setIsLoading(true);
         
-        const response = await fetch("https://alexandrumariesapi20220720164524.azurewebsites.net/reference");
+        const response = await fetch("https://alexandrumariesapi.azurewebsites.net/reference");
         const data = await response.json();
         
         setReferences(data);
