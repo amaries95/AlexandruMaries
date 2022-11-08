@@ -6,7 +6,7 @@ export default function Option(props)
     return (
     <div className={style.option}>
        <li>
-        <Link to={`/${props.text.toLowerCase() === 'home' ? '/' : props.text.toLowerCase()}`}>
+        <Link to={`/${props.text.toLowerCase() === 'home' ? '' : props.text.toLowerCase()}`}>
             <span>{props.text}</span>
         </Link>
         </li>

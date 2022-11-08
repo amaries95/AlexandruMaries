@@ -1,5 +1,6 @@
 import { useState } from 'react';
-// import { CloseCircle, CloseCircleOutline, Send, SendOutline } from 'react-ionicons';
+import { RiCloseCircleFill as CloseCircle, RiCloseCircleLine as CloseCircleOutline} from 'react-icons/ri';
+import {IoSendOutline as SendOutline, IoSend as Send} from 'react-icons/io5';
 import style from './ReferenceForm.module.css';
 
 export default function ReferenceForm(props){
@@ -141,14 +142,14 @@ export default function ReferenceForm(props){
             <div className={style.controls}>
                 <div className={style['hide-form-container']}>
                     <button className={`${style['hide-form']} ${style['icon']}`} onMouseOver={onHideButtonHover} onMouseOut={onHideButtonNotHover} onClick={onHideButtonClicked}>
-                        {/* {hoverHideButton && <CloseCircle color={'darkcyan'}></CloseCircle>} */}
-                        {/* {!hoverHideButton && <CloseCircleOutline color={'darkcyan'}></CloseCircleOutline>} */}
+                        {hoverHideButton && <CloseCircle color={'darkcyan'} size={'40px'}></CloseCircle>}
+                        {!hoverHideButton && <CloseCircleOutline color={'darkcyan'} size={'40px'}></CloseCircleOutline>}
                     </button>
                 </div>
                 <div className={style['send-reference-container']}>
                     <button className={`${style['send-reference']} ${style['icon']}`} onMouseOver={onSendButtonHover} onMouseOut={onSendButtonNotHover} onClick={onSendReference}>
-                            {/* {hoverSendButton && <Send color={'darkcyan'}></Send>} */}
-                            {/* {!hoverSendButton && <SendOutline color={'darkcyan'}></SendOutline>} */}
+                            {hoverSendButton && <Send color={'darkcyan'} size={'35px'}></Send>}
+                            {!hoverSendButton && <SendOutline color={'darkcyan'} size={'35px'}></SendOutline>}
                     </button>
                 </div>
             </div>

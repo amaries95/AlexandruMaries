@@ -13,7 +13,7 @@ export default function MobileOption(props)
     return (
         <div className={style.option}>
             <li>
-                <Link to={`/${props.text.toLowerCase() === 'home' ? '/' : props.text.toLowerCase()}`}>
+                <Link to={`/${props.text.toLowerCase() === 'home' ? '' : props.text.toLowerCase()}`}>
                     <span>{MobileMappers[props.text]}</span>
                 </Link>
             </li>
