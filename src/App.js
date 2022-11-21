@@ -9,6 +9,7 @@ import MobileHeaderMenu from './components/MobileHeaderMenu/MobileHeaderMenu';
 import Projects from './components/Projects/Projects';
 import References from './components/References/References';
 import Skills from './components/Skills/Skills';
+import Login from './components/Login/Login';
 
 function App() {
   return (
@@ -37,6 +38,10 @@ function App() {
               <Route
                 path="/references"
                 element={<References/>}
+              ></Route>
+              <Route
+                path="/login"
+                element={<Login/>}
               ></Route>
             </Routes>
           </Col>

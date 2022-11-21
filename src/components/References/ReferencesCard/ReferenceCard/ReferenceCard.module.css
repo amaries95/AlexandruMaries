@@ -36,6 +36,15 @@ p {
     margin-top: 5px;
 }
 
+.controls-admin {
+    display: inline;
+}
+
+.control-admin {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 1350px) {
     .reference-card:last-child {
         margin-bottom: 30%;

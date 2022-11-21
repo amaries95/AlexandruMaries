@@ -8,9 +8,11 @@ export default function ReferencesCard(props)
             {props.referencesProp.map((reference) => (
                 <ReferenceCard 
                 key={reference.id}
+                id={reference.id}
                 summary={reference.summary}
                 author={reference.author}
-                jobTitleAuthor={reference.jobTitleAuthor}/>
+                jobTitleAuthor={reference.jobTitleAuthor}
+                isVisible={reference.isVisible}/>
             ))}
         </div>
     );

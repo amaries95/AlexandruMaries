@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { RiCloseCircleFill as CloseCircle, RiCloseCircleLine as CloseCircleOutline} from 'react-icons/ri';
 import {IoSendOutline as SendOutline, IoSend as Send} from 'react-icons/io5';
 import style from './ReferenceForm.module.css';
+import { referenceActions } from '../../Store/reference';
 
 export default function ReferenceForm(props){
 
@@ -15,6 +17,11 @@ export default function ReferenceForm(props){
     const [isAuthorValid, setIsAuthorValid] = useState(true);
     const [isAuthorJobTitleValid, setIsAuthorJobTitleValid] = useState(true);
     const [isSummaryInputValid, setIsSummaryInputValid] = useState(true);
+
+    const referencesStore = useSelector(state => state.reference.referenceList);
+    const baseUrl = useSelector(state => state.routes.baseUrl);
+    const addReference = useSelector(state => state.routes.addNewReference);
+    const referenceDispatch = useDispatch();
 
     function onSendButtonHover(){
         setHoverSendButton(true);
@@ -41,7 +48,7 @@ export default function ReferenceForm(props){
         
         if(await postReference(reference))
         {
-            props.TransferNewReferenceToParent(reference);
+            referenceDispatch(referenceActions.saveReferences([...referencesStore, reference]));
         }
     }
 
@@ -69,7 +76,7 @@ export default function ReferenceForm(props){
 
             var bodyRef = JSON.stringify(reference);
 
-            var response = fetch("https://alexandrumariesapi20220720164524.azurewebsites.net/reference",{
+            var response = fetch(baseUrl + addReference,{
                 method: 'POST',
                 headers: {
                 'Content-Type': 'application/json',

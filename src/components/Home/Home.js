@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import AboutMe from './AboutMe/AboutMe';
 import style from './Home.module.css';
 import Wallpaper from './Wallpaper/Wallpaper';
@@ -10,6 +11,10 @@ export default function Home(props)
         {Type: "address", Info: "Cluj-Napoca, Romania"},
         {Type: "languages", Info: "Romanian, English"},
     ];
+
+    useEffect(() => {
+        
+    })
 
     return (
         <div className={style.container}>
