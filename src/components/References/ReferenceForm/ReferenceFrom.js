@@ -45,15 +45,19 @@ export default function ReferenceForm(props){
             author: authorInput,
             jobTitleAuthor: authorJobTitleInput
         };
+
+        var newRefId = await postReference(reference);
         
-        if(await postReference(reference))
+        if(newRefId)
         {
+            reference.id = newRefId;
             referenceDispatch(referenceActions.saveReferences([...referencesStore, reference]));
+            referenceDispatch(referenceActions.setReferenceFormToHidden());
         }
     }
 
     function onHideButtonClicked(){
-        props.ToggleAddReference(true);
+        referenceDispatch(referenceActions.setReferenceFormToHidden());
     }
 
     function isValid(text)
@@ -85,9 +89,8 @@ export default function ReferenceForm(props){
             });
 
             const data = await (await response).json();
-            console.log(data);
 
-            return true;
+            return data.id;
         }
 
         if(!isValid(authorInput))

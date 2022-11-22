@@ -10,8 +10,8 @@ import {referenceActions} from "./../Store/reference";
 export default function References(props)
 {
     const referencesStore = useSelector(state => state.reference.referenceList);
+    const isFormVisible = useSelector(state => state.reference.isFormVisible);
     const [isLoading, setIsLoading] = useState(false);
-    const [isReferenceFormHidden, setIsReferenceFormHidden] = useState(true);
     const [numberOfWebsiteVisits, setNumberOfWebsiteVisits] = useState('');
     const isLogin = useSelector(state => state.login.isAuth);
     const token = useSelector(state => state.login.token);
@@ -22,12 +22,14 @@ export default function References(props)
     const referencesDispatch = useDispatch();
 
     const noReferenceYetCard = [{
+        id: "0",
         summary: "No references yet. Be the first one who adds a reference for Alex. 🙂",
         author: "Server Response",
         jobTitleAuthor: "Azure Database"
     }];
     
     const loadingReferenceCard = [{
+        id: "1",
         summary: "Reading all references from the server...",
         author: "Frontend App",
         jobTitleAuthor: "React"
@@ -79,11 +81,6 @@ export default function References(props)
      }, 
     [getReferences]);
 
-    function toggleReferenceForm(isHidden)
-    {
-        setIsReferenceFormHidden(isHidden);
-    }
-
     return (
         <div className={style.container}>
             <h3>References</h3>
@@ -91,8 +88,8 @@ export default function References(props)
             {isLoading && <ReferencesCard referencesProp={loadingReferenceCard}></ReferencesCard>}
             {!isLoading && referencesStore.length === 0 && <ReferencesCard referencesProp={noReferenceYetCard}></ReferencesCard>}
             {!isLoading && <ReferencesCard referencesProp={referencesStore}/>}
-            {!isReferenceFormHidden && <ReferenceForm ToggleAddReference={toggleReferenceForm}></ReferenceForm>}
-            {isReferenceFormHidden && <AddReference ToggleAddReference={toggleReferenceForm}></AddReference>}
+            {isFormVisible && <ReferenceForm></ReferenceForm>}
+            {!isFormVisible && <AddReference></AddReference>}
         </div>
     );
 }

@@ -1,6 +1,6 @@
 import {createSlice} from "@reduxjs/toolkit";
 
-const initialReferencesState = {referenceList: []};
+const initialReferencesState = {referenceList: [], isFormVisible: false};
 
 const referenceSlice = createSlice({
     name: "reference",
@@ -8,6 +8,12 @@ const referenceSlice = createSlice({
     reducers: {
         saveReferences(state, actions){
             state.referenceList = actions.payload;
+        },
+        setReferenceFormToVissible(state) {
+            state.isFormVisible = true;
+        },
+        setReferenceFormToHidden(state) {
+            state.isFormVisible = false;
         }
     }
 });
