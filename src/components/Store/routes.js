@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const routesSlice = createSlice({
     name: "routes",
     initialState: {
-        baseUrl: "https://alexandrumariesapi.azurewebsites.net",
+        baseUrl: "https://alexandru-maries.azurewebsites.net",
         getVisibleReferences: "/Reference/visible",
         getAllReferences: "/Reference/all",
         addNewReference: "/Reference/add",
