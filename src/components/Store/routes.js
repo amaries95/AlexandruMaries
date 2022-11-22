@@ -10,7 +10,7 @@ const routesSlice = createSlice({
         updateReferenceVisibility: "/Reference/update",
         deleteReference: "/Reference/delete",
         userLogin: "/User/login",
-        inrementViews: "/Views/increment",
+        incrementViews: "/Views/increment",
         getViews: "/Views/all"
     }
 });
