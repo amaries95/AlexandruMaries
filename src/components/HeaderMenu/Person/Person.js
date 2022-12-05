@@ -4,7 +4,7 @@ import img from './photo.JPG';
 export default function Person(props) {
   return (
     <div className={style.person}>
-      <img src={img}></img>
+      <img src={img} alt="Alexandru Maries"></img>
       <h3>Alex Mărieș</h3>
       <p>Software Developer</p>
     </div>
