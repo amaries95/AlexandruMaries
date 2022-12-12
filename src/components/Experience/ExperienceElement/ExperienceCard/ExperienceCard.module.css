@@ -22,15 +22,16 @@
 .description ul{
     margin-bottom: 0;
     padding-top: 0.5%;
-    display: flex;
-    flex-wrap: wrap;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
 }
 
 .description ul li{
     list-style-type: circle;
-    margin-right: 7%;
     margin-top: 1%;
     min-width: 40%;
+    margin-right: 20px;
 }
 
 .role{
@@ -51,26 +52,12 @@
     font-size: 17px;
 }
 
-.separator {
-    width: 100%;
-    display: flex;
-}
-
-.sep1 {
-    width: 50%;
-}
-
-.sep2 {
-    width: 50%;
-    border-left: 2px solid darkcyan;
-}
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
     .description ul li {
         font-size: 14px;
     }
 
     .description ul{
-        display: block;
+        columns: 1;
     }
 }

@@ -16,7 +16,7 @@ function App() {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>Alexandru Maries - Personal portofolio</title>
+        <title>Alexandru Maries - Personal portfolio</title>
         <meta name="description" content="This is a full stack web application developed by Alexandru Maries to serve it as online personal CV."></meta>
       </Helmet>
       <Router>

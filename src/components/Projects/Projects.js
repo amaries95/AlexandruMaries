@@ -11,7 +11,7 @@ export default function Projects(props)
         },
         {
             Title: 'Employee Capacity Management',
-            Summary: 'Contributed to the internal tool  features of a company for asigning employees on different projects. ',
+            Summary: 'Contributed to the internal tool features of a company for asigning employees on different projects. Depending of user\'s role, he can manage and store different information about projects, employees and generate working reports.',
             Technologies: ['.Net 6.0', 'xUnit', 'FluentAssertion', 'MediatR', 'Moq', 'React', 'HTML', 'CSS', 'EntityFrameworkCore']
         },
         {
@@ -20,9 +20,9 @@ export default function Projects(props)
             Technologies: ['Javascript', 'Handlebars', 'node.js', 'CSS', 'HTML']
         },
         {
-            Title: 'Personal Portofolio',
-            Summary: 'Started to work on a personal portfolio for the sake of learning React. The frontend part is deployed in GitHub pages. It also has a small application on backend deployed in Azure and a DB where the references are saved. It\'s actually the project you\'re looking at.',
-            Technologies: ['Javascript', 'React', 'HTML', 'CSS', 'Net 6.0', 'Entity Framework Core', 'Azure App Service']
+            Title: 'Personal Portfolio',
+            Summary: 'Started to work on a personal portfolio for the sake of learning React. The both, frontend and backend sides are deployed in Azure. The backend application is used for CRUD operations for references. It\'s been implemented a login feature where an admin can delete or change visibility for any reference.  It\'s actually the project you\'re looking at. :)',
+            Technologies: ['Javascript', 'React', 'HTML', 'CSS', 'ReduxJs Toolkit', 'Net 6.0', 'Entity Framework Core', 'Azure App Service']
         },
         {
             Title: 'Xml file configurator and generator tool for Automotive industry',

@@ -10,7 +10,7 @@ export default function Footer(props) {
           target="_blank"
           rel="noreferrer">
                 <FaLinkedinIn color={'white'}
-                size={"35px"}
+                className={style['social-icons']}
                 title="Linkedin"/></a>
       </div>
       <div className={style.icon}>
@@ -20,7 +20,7 @@ export default function Footer(props) {
               rel="noreferrer">
               <FaGithub
                 color={'white'}
-                size={"35px"}
+                className={style['social-icons']}
                 title='Github'
               ></FaGithub></a>
       </div>
@@ -30,7 +30,7 @@ export default function Footer(props) {
           rel="noreferrer">
               <FaFilePdf
                 color={'white'}
-                size={"35px"}
+                className={style['social-icons']}
                 title='Download CV'>
                 </FaFilePdf>
         </a>

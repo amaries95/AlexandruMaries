@@ -9,40 +9,26 @@
 
 .icon{
     margin: auto;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media only screen and (max-width: 1000px) {
-    .icon a span svg {
+.social-icons {
+    width: 35px;
+    height: 35px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .social-icons {
         height: 30px;
         width: 30px;
     }
 }
 
-@media only screen and (max-width: 700px) {
-    .icon a span svg {
+@media only screen and (max-width: 800px) {
+    .social-icons {
         height: 25px;
         width: 25px;
-    }
-}
-
-@media only screen and (max-height: 700px) {
-    .icon a span svg {
-        height: 30px;
-        width: 30px;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .icon a span svg {
-        height: 20px;
-        width: 20px;
-    }
-}
-
-@media only screen and (max-width: 400px) {
-    .icon a span svg {
-        height: 15px;
-        width: 15px;
     }
 }
