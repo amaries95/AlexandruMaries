@@ -14,6 +14,10 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 
 function App() {
   return (
+    <HelmetProvider>
+      <Helmet>
+        <title>Alexandru Maries - Personal portfolio</title>
+      </Helmet>
       <Router>
         <Container fluid={true} className="container-padding">
           <Row className="vh-100 vw-100 gx-0">
@@ -34,6 +38,7 @@ function App() {
           </Row>
         </Container>
       </Router>
+    </HelmetProvider>
   );
 }
 
