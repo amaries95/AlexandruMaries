@@ -65,13 +65,19 @@
     margin-left: 0%;
     margin-top: 50px;
     padding-top: 16px;
-    padding-bottom: 50px;
+    padding-bottom: 100px !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content-container {
+    padding-bottom: 100px !important;
   }
 }
 
 @supports (-webkit-touch-callout: none) {
   .content-container {
-    padding-bottom: 50px !important;
-    margin-bottom: 90px !important;
+    padding-bottom: 100px !important;
+    margin-bottom: 100px !important;
   }
 }
