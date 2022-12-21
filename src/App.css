@@ -68,3 +68,9 @@
     padding-bottom: 50px;
   }
 }
+
+@supports (-webkit-touch-callout: none) {
+  .content-container {
+    padding-bottom: 50px;
+  }
+}
