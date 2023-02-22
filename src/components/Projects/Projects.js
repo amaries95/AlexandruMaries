@@ -5,6 +5,11 @@ export default function Projects(props)
 {
     const projects = [
         {
+            Title: 'Back office orders system management for investments',
+            Summary: 'Working on a microservices architecture of a system which manages the orders of investments from banks. The system maps the data and send it further using Advanced Message Queing Protocol (e.g. RabbitMQ) to the broker, in order to buy/sell financial instruments.',
+            Technologies: ['.Net 7.0', 'xUnit', 'FluentAssertion', 'Moq', 'Docker', 'Microservices Architecture', 'RabbitMQ']
+        },
+        {
             Title: 'Banking Service Connector',
             Summary: 'Developed a connector project for Banking service in .Net. In this project, a third party is called to retrieve some account information and passed further to the client project where the information received can be organized in many ways.',
             Technologies: ['.Net 6.0', 'xUnit', 'FluentAssertion', 'Moq']
