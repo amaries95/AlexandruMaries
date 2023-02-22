@@ -5,9 +5,21 @@ export default function Experience(props)
 {
     const experience = [
         {
-            Company: 'Plain Concepts',
-            StartPeriod: new Date(2022, 2),
+            Company: 'Centric',
+            StartPeriod: new Date(2022, 12),
             EndPeriod: new Date(), // present
+            Position: 'Full Stack Web Developer',
+            Responsabilities: [
+                'developing new features on frontend and backend side',
+                'fixing UI and functionality bugs',
+                'planning and estimating new features',
+                'manual, unit and integration testing',
+            ]
+        },
+        {
+            Company: 'Plain Concepts',
+            StartPeriod: new Date(2022, 3),
+            EndPeriod: new Date(2022, 12), // present
             Position: 'Full Stack Web Developer',
             Responsabilities: [
                 'developing new features on frontend and backend side',
