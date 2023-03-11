@@ -11,6 +11,7 @@ import References from "./components/References/References";
 import Skills from "./components/Skills/Skills";
 import Login from "./components/Login/Login";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import "./Styles/colors.css";
 
 function App() {
   return (

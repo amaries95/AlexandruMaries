@@ -1,5 +1,5 @@
 .bottom-info {
-    background-color: darkcyan;
+    margin-top: 10%;
     border-radius: 0%;
     height: 10%;
     width: 100%;
@@ -15,8 +15,8 @@
 }
 
 .social-icons {
-    width: 35px;
-    height: 35px;
+    width: 20px;
+    height: 20px;
 }
 
 @media only screen and (max-width: 1200px) {

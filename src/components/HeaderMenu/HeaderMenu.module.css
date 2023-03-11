@@ -3,7 +3,9 @@
     overflow: hidden;
     text-align: center;
     height: 100vh;
-    width: 25vw;
+    width: 15vw;
+    background: linear-gradient(to top left, var(--oxford-blue), var(--dark-blue));
+    padding-left: 8%;
 }
 
 .list-group {

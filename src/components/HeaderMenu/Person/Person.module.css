@@ -1,20 +1,23 @@
 .person {
-    height: 35%;
+    height: 13%;
+    width: 100%;
     padding-top: 10%;
     margin-bottom: 3%;
 }
 
 .person h1 {
-    color: darkcyan;
+    color: var(--sea-blue);
     padding-top: 2%;
-    font-size: 175%;
+    font-size: 230%;
+    float: left;
 }
 
 .person p{
-    color: rgb(158, 158, 158);
+    color: var(--bitter-sweet);
     font-size: 112.5%;
     font-weight: 500;
-    font-style: italic;
+    float: left;
+
 }
 
 .person img {

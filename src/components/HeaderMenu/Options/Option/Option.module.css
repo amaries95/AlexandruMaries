@@ -1,24 +1,26 @@
 .option {
-    padding-bottom: 20%;
+    padding-bottom: 5%;
 }
 
 .option li {
     list-style-type: none;
     padding-bottom: 3px;
-    margin-bottom: 7%;
     border-bottom: 0px solid transparent;
 }
 
 .option li a:hover {
-    color: darkcyan;
-    border-bottom: 2px solid darkcyan;
-    transition: .05s;
+    border-bottom: 2px solid var(--sea-blue);
+    transition: 0.2s ease-in;
 }
 
 .option li a {
+    float: left;
     text-decoration: none;
-    color: black;
-    padding-bottom: 4px;
+    color: var(--lighter-blue);
+    padding-bottom: 2px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+
 }
 
 .hidden-text {
