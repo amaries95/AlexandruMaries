@@ -1,3 +1,4 @@
+import SectionTitle from '../../Shared/SectionTitle/SectionTitle';
 import style from './Experience.module.css';
 import ExperienceElement from './ExperienceElement/ExperienceElement';
 
@@ -80,7 +81,7 @@ export default function Experience(props)
 
     return (
         <div className={style.container}>
-            <h3>Work Experience</h3>
+            <SectionTitle title='My Experience'></SectionTitle>
             {experience.map((exp) => (
                 <ExperienceElement 
                 key={Math.random()}

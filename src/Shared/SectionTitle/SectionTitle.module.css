@@ -1,0 +1,11 @@
+.section-title {
+    background-color: var(--sea-blue);
+    padding: 0px 7px;
+    border-radius: 8px;
+    width: fit-content;
+}
+
+.section-title p {
+    font-weight: 700;
+}
+

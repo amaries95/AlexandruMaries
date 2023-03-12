@@ -9,7 +9,6 @@ import MobileHeaderMenu from "./components/MobileHeaderMenu/MobileHeaderMenu";
 import Projects from "./components/Projects/Projects";
 import References from "./components/References/References";
 import Skills from "./components/Skills/Skills";
-import Login from "./components/Login/Login";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import "./Styles/colors.css";
 
@@ -27,14 +26,20 @@ function App() {
               <HeaderMenu />
             </Col>
             <Col className="content-container">
-              <Routes>
+              <section id=" "><Home /></section>
+              <section id="experience"><Experience /></section>
+              <section id="projects"><Projects /></section>
+              <section id="skills"><Skills /></section>
+              <section id="references"><References /></section>
+
+              {/* <Routes>
                 <Route path="" element={<Home />}></Route>
                 <Route path="/experience" element={<Experience />}></Route>
-                <Route path="/projects" element={<Projects></Projects>}></Route>
-                <Route path="/skills" element={<Skills></Skills>}></Route>
+                <Route path="/projects" element={<Projects/>}></Route>
+                <Route path="/skills" element={<Skills/>}></Route>
                 <Route path="/references" element={<References />}></Route>
                 <Route path="/login" element={<Login />}></Route>
-              </Routes>
+              </Routes> */}
             </Col>
           </Row>
         </Container>

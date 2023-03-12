@@ -1,0 +1,38 @@
+.container {
+    height: 22%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+}
+
+.hire-me {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--bitter-sweet);
+    border-radius: 20px;
+    padding: 0px 10px;
+    margin-bottom: 15%;
+}
+
+.hire-me p {
+    color: var(--bitter-sweet);
+    padding: 0px 5px;
+}
+
+.hire-me svg {
+    width: 20px;
+}
+
+.hire-me:hover {
+    background-color: var(--bitter-sweet);
+    cursor: pointer;
+}
+
+.hire-me:hover p{
+    color: var(--lighter-blue);
+}
+
+.hire-me:hover svg {
+    stroke: var(--lighter-blue);
+    fill: var(--lighter-blue);
+}

@@ -1,7 +1,7 @@
 .splitter {
-    border-left: 3px solid darkcyan;
-    height: 500px;
-    margin-left: 45%;
-    margin-top: 36px;
+    border-left: 1px solid var(--lighter-blue);
+    height: 900%;
+    margin-left: 49%;
+    margin-top: 100%;
     overflow: hidden;
 }

@@ -1,8 +1,7 @@
 import { useCallback, useEffect, useReducer } from 'react';
 import { useSelector } from 'react-redux';
-import AboutMe from './AboutMe/AboutMe';
 import style from './Home.module.css';
-import Wallpaper from './Wallpaper/Wallpaper';
+import SectionTitle from '../../Shared/SectionTitle/SectionTitle';
 
 export default function Home(props)
 {
@@ -29,8 +28,7 @@ export default function Home(props)
 
     return (
         <div className={style.container}>
-            <Wallpaper></Wallpaper>
-            <AboutMe Infos={basicInfo}></AboutMe>
+            <SectionTitle title="Home"></SectionTitle>
         </div>
     );
 }

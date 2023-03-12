@@ -1,4 +1,4 @@
-import Footer from './Footer/Footer';
+import HireMe from './Footer/HireMe';
 import style from './HeaderMenu.module.css';
 import Options from './Options/Options';
 import Person from './Person/Person';
@@ -10,5 +10,6 @@ export default function HeaderMenu(props)
         <Person />
         <SocialLinks></SocialLinks>
         <Options />
+        <HireMe></HireMe>
     </div>;
 }

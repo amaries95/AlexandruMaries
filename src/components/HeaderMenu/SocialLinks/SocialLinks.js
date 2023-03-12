@@ -6,11 +6,9 @@ import PdfIcon from '../../../Icons/PdfIcon';
 export default function SocialLinks() {
     return (
         <div className={style.container}>
-            <a href=''>
-                <LinkedInIcon></LinkedInIcon>
-            </a>
-            <GithubIcon></GithubIcon>
-            <PdfIcon></PdfIcon>
+            <a href='https://www.linkedin.com/in/alexandrumaries' target="_blank"><LinkedInIcon></LinkedInIcon></a>
+            <a href='https://github.com/amaries95' target="_blank"><GithubIcon></GithubIcon></a>
+            <a href='https://www.icloud.com/iclouddrive/067peGQrqYYPxdPchnT7S6drA#CV' target="_blank"><PdfIcon></PdfIcon></a>
         </div>
     )
 }

@@ -1,7 +1,6 @@
 .container {
-    margin: 0% 2% 2% 2%;
+    padding: 3%;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
-    width: 96%;
 }

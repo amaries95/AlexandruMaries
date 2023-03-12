@@ -1,13 +1,12 @@
 .bullet {
-    height: 40px;
+    height: 20px;
     width: 40px;
-    background-color: rgb(231, 243, 243);
-    background-color: white;
-    /* background-color: darkcyan; */
     border-radius: 50%;
     float: left;
     margin-right: 2%;
-    border: 2px solid darkcyan;
+    border: 1px solid var(--lighter-blue);
+    background-color: var(--completed-bullet);
+    border-radius: 100rem 50rem 10rem 10rem;
   }
 
 @media only screen and (max-width: 700px)
