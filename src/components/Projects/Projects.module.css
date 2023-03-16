@@ -1,0 +1,12 @@
+.container {
+    padding: 3%;
+}
+
+.cards-container{
+    padding: 1% 0%;
+    overflow-x: scroll;
+    width: 100%;
+    display: flex;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+}

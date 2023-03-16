@@ -1,0 +1,8 @@
+.container {
+    margin: 1%;
+    height: 500px;
+    background-color: #dddddd;
+    border-radius: 10px;
+    cursor: pointer;
+    flex: 0 0 30%;
+}

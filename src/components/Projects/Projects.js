@@ -1,5 +1,7 @@
-import style from './Project.module.css';
-import ProjectCards from './ProjectCards/ProjectCards';
+import SectionTitle from '../../Shared/SectionTitle/SectionTitle';
+import ProjectCard from './ProjectCard/ProjectCard';
+import ProjectCardExpanded from './ProjectCardExpanded/ProjectCardExpanded';
+import style from './Projects.module.css';
 
 export default function Projects(props)
 {
@@ -43,13 +45,53 @@ export default function Projects(props)
             Title: 'Dynamic Office Allocation',
             Summary: 'The purpose of this project is to improve the resources management of a company, by introducing a new concept of flexible desks. Based on initial preferences and previous feedback given by employees at the end of their day, it creates a network between people in which the nodes are represented by the employees and the edges are represented by the formed relationships (professional or social) between them. Also there is a Graphical User Interface (GUI) implemented in C++ programming language and developed in the integrated development environment(IDE), Qt5. The interface program it was implemented in order to communicate with the machine learning algorithm, respectively to create a more accessible interface with the users.',
             Technologies: ['C++', 'Linux', 'QT Framework', 'RPI3', 'R', 'SSH']
-        }
+        },
+        {
+            Title: 'Testing script for DEM Autosar layer',
+            Summary: 'A python script which controls the TRACE32 debugger and executes tests according to an input comming from an excel document. The results of the tests are going to be in a html page genrated by the same script.',
+            Technologies: ['python', 'html']
+        },
+        {
+            Title: 'Testing script for DEM Autosar layer',
+            Summary: 'A python script which controls the TRACE32 debugger and executes tests according to an input comming from an excel document. The results of the tests are going to be in a html page genrated by the same script.',
+            Technologies: ['python', 'html']
+        },
+        {
+            Title: 'Testing script for DEM Autosar layer',
+            Summary: 'A python script which controls the TRACE32 debugger and executes tests according to an input comming from an excel document. The results of the tests are going to be in a html page genrated by the same script.',
+            Technologies: ['python', 'html']
+        },
+        {
+            Title: 'Testing script for DEM Autosar layer',
+            Summary: 'A python script which controls the TRACE32 debugger and executes tests according to an input comming from an excel document. The results of the tests are going to be in a html page genrated by the same script.',
+            Technologies: ['python', 'html']
+        },
+        {
+            Title: 'Testing script for DEM Autosar layer',
+            Summary: 'A python script which controls the TRACE32 debugger and executes tests according to an input comming from an excel document. The results of the tests are going to be in a html page genrated by the same script.',
+            Technologies: ['python', 'html']
+        },
+        {
+            Title: 'Testing script for DEM Autosar layer',
+            Summary: 'A python script which controls the TRACE32 debugger and executes tests according to an input comming from an excel document. The results of the tests are going to be in a html page genrated by the same script.',
+            Technologies: ['python', 'html']
+        },
+        {
+            Title: 'Testing script for DEM Autosar layer',
+            Summary: 'A python script which controls the TRACE32 debugger and executes tests according to an input comming from an excel document. The results of the tests are going to be in a html page genrated by the same script.',
+            Technologies: ['python', 'html']
+        },
     ];
 
     return (
         <div className={style.container}>
-            <h3>Projects</h3>
-            <ProjectCards Projects={projects}/>
+            <SectionTitle title='Projects'></SectionTitle>
+            <div className={style['cards-container']}>
+                <ProjectCardExpanded></ProjectCardExpanded>
+                {projects.map((prj) => (
+                    <ProjectCard></ProjectCard>
+                ))}
+            </div>
         </div>
     );
 }

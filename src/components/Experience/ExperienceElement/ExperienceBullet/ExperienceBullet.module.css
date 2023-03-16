@@ -1,12 +1,29 @@
-.bullet {
-    height: 20px;
-    width: 40px;
+.container-bullet {
+    height: 42px;
+    width: 42px;
     border-radius: 50%;
     float: left;
     margin-right: 2%;
-    border: 1px solid var(--lighter-blue);
+    border: 2px solid var(--lighter-blue);
+}
+
+.bullet {
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  background-color: var(--completed-bullet);
+  float: left;
+}
+
+.half-bullet {
+    height: 19px;
+    width: 38px;
+    border-radius: 50%;
     background-color: var(--completed-bullet);
-    border-radius: 100rem 50rem 10rem 10rem;
+    border-radius: 0 0 50% 50%/0 0 100% 100%;
+    margin-top: 19px;
+    float: left;
+
   }
 
 @media only screen and (max-width: 700px)

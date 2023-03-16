@@ -35,21 +35,19 @@
 }
 
 .role{
-    color: rgb(111, 192, 187);
-    display: block !important;
-    margin: 0 !important;
-    padding-left: 0.5% !important;
-    font-style: italic;
+    font-weight: 600;
+    font-size: 18px;
 }
 
 .period-of-time {
-    margin-left: 1%;
+    display: block !important;
     color: rgb(158, 158, 158);
 }
 
 .company-name {
-    font-weight: 600;
-    font-size: 17px;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--bitter-sweet);
 }
 
 @media screen and (max-width: 800px) {
