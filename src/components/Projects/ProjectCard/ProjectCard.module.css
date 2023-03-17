@@ -6,3 +6,8 @@
     cursor: pointer;
     flex: 0 0 8%;
 }
+
+.expanded {
+    flex: 0 0 30% !important;
+    transition: .3s linear;
+}

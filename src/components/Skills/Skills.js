@@ -1,3 +1,4 @@
+import SectionTitle from '../../Shared/SectionTitle/SectionTitle';
 import style from './Skills.module.css';
 import SkillsGroup from './SkillsGroup/SkillsGroup';
 
@@ -42,7 +43,7 @@ export default function Skills(props)
     
     return (
         <div className={style.container}>
-            <h3>Skills</h3>
+            <SectionTitle title='Skills'></SectionTitle>
             <SkillsGroup SkillsGroup={technicalSkillGroup}></SkillsGroup>
             <SkillsGroup SkillsGroup={otherTechnicalSkillGroup}></SkillsGroup>
             <SkillsGroup SkillsGroup={personalSkillGroup}></SkillsGroup>

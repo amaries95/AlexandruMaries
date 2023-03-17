@@ -1,6 +1,6 @@
 .container {
-    margin: 2% 4% 0% 4%;
-    overflow: hidden;
+    padding: 3%;
+    background-color: var(--denim);
 }
 
 .container h3 {
