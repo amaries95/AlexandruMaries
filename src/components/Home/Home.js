@@ -24,7 +24,7 @@ export default function Home(props)
     });
 
     useEffect(() => {
-        incrementViewsHandler();
+        // incrementViewsHandler();
     })
 
     return (

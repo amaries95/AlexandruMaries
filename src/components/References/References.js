@@ -20,6 +20,38 @@ export default function References(props)
     const getVisibleReferences = useSelector(state => state.routes.getVisibleReferences);
     const getViews = useSelector(state => state.routes.getViews);
     const referencesDispatch = useDispatch();
+    const ReferencesConstant = [
+        {
+            id: 48,
+            summary: "Alex was a real pleasure to work with. I would describe him as a passionate developer with a continuous learning mindset. He demonstrates his skills beautifully in this portfolio.",
+            author: "Casandra Sucala",
+            jobTitleAuthor: "Software Engineer"
+        },
+        {
+            id: 88,
+            summary: "It was super fun to solve problems with Alex. I hope we will be able to code together again :D",
+            author: "Eduard Melu",
+            jobTitleAuthor: "Full Stack Engineer"
+        },
+        {
+            id: 89,
+            summary: "Alexandru is not afraid to take on challenges and showed professionalism and dedication in every task he did. It was a really great pleasure to work with someone as daring and passionate, who wants to do more than is expected, who knows how to share his knowledge and can work and integrate in any team.",
+            author: "Roxana Gheorghe",
+            jobTitleAuthor: "Software Engineer"
+        },
+        {
+            id: 90,
+            summary: "I've worked with Alex for quite some time, and during this period, he's proven to be one of the best people one could work with: he's very dedicated, with a great eagerness to learn new things and acquire new skills, he's not afraid of a challenge. He is also very helpful when someone's in need, and he's easy to communicate with. Overall, a great person to have as a colleague.",
+            author: "Sabina Andrei",
+            jobTitleAuthor: "Software Engineer"
+        },
+        {
+            id: 92,
+            summary: "Was really nice to have Alexandru in our Team, We hope that we will cross our paths in the future.",
+            author: "Quique",
+            jobTitleAuthor: "Director"
+        },
+    ];
 
     const noReferenceYetCard = [{
         id: "0",
@@ -39,23 +71,23 @@ export default function References(props)
         setIsLoading(true);
         
         let response = null
-        if(isLogin)
-        {
-            response = await fetch(baseUrl + getAllReferences,{
-                method: "GET",
-                headers: { 
-                    "Content-Type": "application/json",
-                    "Authorization": `Bearer ${token}`
-                }
-            });
-        }
-        else {
-            response = await fetch(baseUrl + getVisibleReferences);
-        }
+        // if(isLogin)
+        // {
+        //     response = await fetch(baseUrl + getAllReferences,{
+        //         method: "GET",
+        //         headers: { 
+        //             "Content-Type": "application/json",
+        //             "Authorization": `Bearer ${token}`
+        //         }
+        //     });
+        // }
+        // else {
+        //     response = await fetch(baseUrl + getVisibleReferences);
+        // }
 
-        const data = await response.json();
+        // const data = await response.json();
 
-        referencesDispatch(referenceActions.saveReferences([...data]));
+        referencesDispatch(referenceActions.saveReferences([...ReferencesConstant]));
         setIsLoading(false);
     }, []);
 
@@ -88,8 +120,8 @@ export default function References(props)
             {isLoading && <ReferencesCard referencesProp={loadingReferenceCard}></ReferencesCard>}
             {!isLoading && referencesStore.length === 0 && <ReferencesCard referencesProp={noReferenceYetCard}></ReferencesCard>}
             {!isLoading && <ReferencesCard referencesProp={referencesStore}/>}
-            {isFormVisible && <ReferenceForm></ReferenceForm>}
-            {!isFormVisible && <AddReference></AddReference>}
+            {/* {isFormVisible && <ReferenceForm></ReferenceForm>}
+            {!isFormVisible && <AddReference></AddReference>} */}
         </div>
     );
 }
