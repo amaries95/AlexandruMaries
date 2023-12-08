@@ -6,7 +6,7 @@ export default function Experience(props)
     const experience = [
         {
             Company: 'Centric',
-            StartPeriod: new Date(2022, 12),
+            StartPeriod: new Date(2022, 11),
             EndPeriod: new Date(), // present
             Position: 'Full Stack Web Developer',
             Responsabilities: [
@@ -18,8 +18,8 @@ export default function Experience(props)
         },
         {
             Company: 'Plain Concepts',
-            StartPeriod: new Date(2022, 3),
-            EndPeriod: new Date(2022, 12), // present
+            StartPeriod: new Date(2022, 2),
+            EndPeriod: new Date(2022, 11), // present
             Position: 'Full Stack Web Developer',
             Responsabilities: [
                 'developing new features on frontend and backend side',
